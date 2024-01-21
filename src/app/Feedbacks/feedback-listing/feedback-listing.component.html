@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12">
+      <div *ngFor="let feedback of feedbacks" class="card mb-3">
+        <div class="card-header">
+          {{ feedback.title }}
+        </div>
+        <div class="card-body">
+          <p class="card-text">{{ feedback.description }}</p>
+          <p class="card-text"><strong>Category:</strong> {{ feedback.category }}</p>
+          <p class="card-text"><strong>User:</strong> {{ feedback.user.name }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
